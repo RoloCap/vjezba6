@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vito Špicar – Portfolio Showcase</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #f3f5f7;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(#4a90e2, #6bb7ff);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+        }
+
+        img, iframe, embed, object, picture {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #4a90e2;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #1c5faa;
+        }
+
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 25px 10px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vito Špicar – Portfolio</h1>
+</header>
+
+<main>
+    <p>
+        Posjetite: <a href="https://rolocap.github.io/Studio-Spicar/" target="_blank">Studio Špicar</a>
+    </p>
+
+    <h2>Moji radovi</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>3D vizualizacija</h3>
+            <img src="StelaHodnik.png" alt="StelaHodnik">
+            <img src="Kuhinja7.png" alt="">
+        </div>
+
+        <div class="card">
+            <h3>Fotografija</h3>
+            <picture>
+                <img src="Macka.jpg" alt="Macka">
+                <img src="DSC00712-2.jpg" alt="">
+                
+            </picture>
+        </div>
+
+        <div class="card">
+            <h3>3D render</h3>
+            <img src="borovnica2.png" alt="drip">
+        </div>
+
+        <div class="card">
+            <h3>Seminar</h3>
+            <embed src="KIPARSTVO HELENISTIČKOG DOBA.pdf" type="application/pdf" height="250px">
+        </div>
+
+        <div class="card">
+            <h3>Životopis</h3>
+            <object data="Životopis 2024.pdf" type="application/pdf" height="250"></object>
+        </div>
+
+<div class="card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px;">
+    <h3>Zaprati me</h3>
+    <a href="https://www.instagram.com/_vitodesign_/"><img src="Instagram_logo_2022.svg.webp" alt="IGLogo" style="width: 100px;"></a>
+</div>
+
+
+    </div>
+</main>
+
+</body>
+</html>
